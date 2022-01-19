@@ -1,0 +1,81 @@
+:root {
+
+    /* ----- PALETA DE COLORES ------ */
+
+    --color-principal:#071019;
+    --color-secundary:#0968b4;
+    --color-opcional_1: #25a0db;
+    --color-opcional_2: #f2f2f2;
+    --color-opcional_3: #cacaca;
+    --color-opcional_4: #fd6584;
+
+    /* ----- tipografia ----- */
+
+    --fuente-principal: 'Open Sans Condensed', sans-serif;
+    --fuente-secundary: 'Roboto', sans-serif;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-principal) ;
+}
+
+form .nombre, .password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .nombre, .password label {
+    color: var(--color-opcional_3);
+    margin: 10px;
+}
+
+form .nombre label {
+    margin: 10px;
+}
+
+form input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-opcional_1);
+    color: var(--color-principal);
+}
+
+form button:hover {
+    background-color: var(--color-opcional_3);
+    color: var(--color-principal);
+}

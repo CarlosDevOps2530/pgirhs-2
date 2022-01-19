@@ -1,0 +1,116 @@
+:root {
+
+    /* ----- PALETA DE COLORES ------ */
+
+    --color-principal:#071019;
+    --color-secundary:#0968b4;
+    --color-opcional_1: #25a0db;
+    --color-opcional_2: #f2f2f2;
+    --color-opcional_3: #cacaca;
+    --color-opcional_4: #fd6584;
+
+    /* ----- tipografia ----- */
+
+    --fuente-principal: 'Open Sans Condensed', sans-serif;
+    --fuente-secundary: 'Roboto', sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--color-principal);
+    position: fixed;
+    width: 100%;
+}
+
+header ul {
+    margin-right: 10px;
+}
+
+header img {
+    display: none;
+}
+
+header h1 {
+    color: var(--color-opcional_3);
+    margin-left: 10px;
+    font-family: var(--fuente-secundary);
+}
+
+.principal {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 150px;
+}
+
+.principal .imagen {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: chartreuse; */
+    padding: 20px 0;
+}
+
+.principal .texto {
+    width: 50%;
+    /* background-color: coral; */
+    padding: 20px 20px 20px 50px;
+    font-family: var(--fuente-secundary);
+    font-size: 20px;
+    text-align: center;
+}
+
+.principal .texto h2 {
+    margin-bottom: 40px;
+    font-family: var(--fuente-secundary);
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width:760px) {
+    header ul {
+        display: none;
+    }
+
+    header img {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .principal .imagen {
+        width: 100%;
+        padding: 20px 0 0 0;
+        margin-bottom: 20px;
+    }
+
+    .principal .texto {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .principal .texto h2 {
+        text-align: center;
+    }
+}
