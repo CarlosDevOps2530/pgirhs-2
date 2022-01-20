@@ -34,14 +34,15 @@ body {
 }
 
 form {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--color-principal) ;
+    background-color: var(--color-principal);
+    margin-top: 70px;
 }
 
 form h1 {
