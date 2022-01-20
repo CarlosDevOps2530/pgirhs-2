@@ -23,6 +23,14 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: var(--fuente-secundary);
+    background-color: var(--color-principal);
+    color: var(--color-opcional_3);
+    text-align: center;
+    padding: 10px 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -55,6 +63,7 @@ header h1 {
     align-items: center;
     height: auto;
     padding-top: 150px;
+    margin-bottom: 50px;
 }
 
 .principal .imagen {
@@ -81,6 +90,133 @@ header h1 {
     font-size: 30px;
     text-align: center;
 }
+
+.clasificacion h3 {
+    font-family: var(--fuente-secundary);
+    text-align: center;
+    color: var(--color-principal);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.clasificacion .two, .one {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.clasificacion .two img {
+    margin: 20px;
+}
+
+.clasificacion .two p {
+    font-family: var(--fuente-secundary);
+    text-align: justify;
+    margin-right: 30px;
+    padding-left: 20px;
+    /* background-color: yellowgreen; */
+}
+
+.clasificacion .one img {
+    margin: 20px;
+}
+
+.clasificacion .one p {
+    font-family: var(--fuente-secundary);
+    text-align: justify;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.infeccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infeccion p {
+    font-family: var(--fuente-secundary);
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.infeccion img {
+    margin-bottom: 30px;
+}
+
+.proteccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proteccion p {
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 10px;
+}
+
+.proteccion img {
+    margin-bottom: 20px;
+    border: 1px solid var(--color-principal);
+    padding: 10px;
+}
+
+.ruta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ruta img {
+    margin: 30px 0;
+}
+
+.ruta p {
+    text-align: justify;
+    font-family: var(--fuente-secundary);
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.final img {
+    margin: 30px 0;
+}
+
+.final p {
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fuente-secundary);
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-opcional_3);
+}
+
+footer p {
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+
+
 
 @media (max-width:760px) {
     header ul {
@@ -113,4 +249,31 @@ header h1 {
     .principal .texto h2 {
         text-align: center;
     }
+
+    .clasificacion .two, .one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clasificacion .one p {
+        text-align: justify;
+        margin: 0;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .clasificacion .two p {
+        text-align: justify;
+        margin: 0;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    } 
+
+    .clasificacion h3 {
+        margin-bottom: 30px;
+    }
+
+    
 }

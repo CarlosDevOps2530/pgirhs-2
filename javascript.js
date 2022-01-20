@@ -3,7 +3,7 @@ let password = document.getElementById('pass')
 let boton = document.getElementById('boton')
 
 function entrar () {
-    if (password.value === '123') {
+    if (password.value === '123Car') {
         alert('Bienvenido a PGIRHS')
         window.location.href = 'https://carlosdevops2530.github.io/pgirhs-2/PaginaPrincipal/index2.html'
     } else {
